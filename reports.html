@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="budget.html">Presupuestos</a></li>
+                <li><a href="goals.html">Metas Financieras</a></li>
+                <li><a href="investments.html">Inversiones</a></li>
+                <li><a href="reports.html">Informes</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Informes</h1>
+        <form id="reportForm">
+            <label for="reportType">Tipo de Informe:</label>
+            <select id="reportType" name="reportType" required>
+                <option value="monthly">Mensual</option>
+                <option value="annual">Anual</option>
+            </select>
+            <button type="submit">Generar Informe</button>
+        </form>
+        <div id="reportOutput">
+            <!-- Informe se mostrará aquí -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plataforma de Gestión Financiera Personal</p>
+    </footer>
+    <script src="js/reports.js"></script>
+</body>
+</html>
+

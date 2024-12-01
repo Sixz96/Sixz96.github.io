@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="budget.html">Presupuestos</a></li>
+                <li><a href="goals.html">Metas Financieras</a></li>
+                <li><a href="investments.html">Inversiones</a></li>
+                <li><a href="reports.html">Informes</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Inversiones</h1>
+        <form id="investmentForm">
+            <label for="investmentName">Nombre de la Inversión:</label>
+            <input type="text" id="investmentName" name="investmentName" required>
+            <label for="investmentAmount">Monto:</label>
+            <input type="number" id="investmentAmount" name="investmentAmount" required>
+            <label for="investmentDate">Fecha de Inversión:</label>
+            <input type="date" id="investmentDate" name="investmentDate" required>
+            <button type="submit">Agregar Inversión</button>
+        </form>
+        <table id="investmentTable">
+            <thead>
+                <tr>
+                    <th>Nombre de la Inversión</th>
+                    <th>Monto</th>
+                    <th>Fecha de Inversión</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas de inversiones se insertarán aquí -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plataforma de Gestión Financiera Personal</p>
+    </footer>
+    <script src="js/investments.js"></script>
+</body>
+</html>
+

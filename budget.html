@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="budget.html">Presupuestos</a></li>
+                <li><a href="goals.html">Metas Financieras</a></li>
+                <li><a href="investments.html">Inversiones</a></li>
+                <li><a href="reports.html">Informes</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Presupuestos</h1>
+        <form id="budgetForm">
+            <label for="category">Categoría:</label>
+            <input type="text" id="category" name="category" required>
+            <label for="amount">Monto:</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">Agregar Presupuesto</button>
+        </form>
+        <table id="budgetTable">
+            <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas de presupuesto se insertarán aquí -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plataforma de Gestión Financiera Personal</p>
+    </footer>
+    <script src="js/budget.js"></script>
+</body>
+</html>
+

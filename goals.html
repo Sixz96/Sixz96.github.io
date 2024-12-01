@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas Financieras</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="budget.html">Presupuestos</a></li>
+                <li><a href="goals.html">Metas Financieras</a></li>
+                <li><a href="investments.html">Inversiones</a></li>
+                <li><a href="reports.html">Informes</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Metas Financieras</h1>
+        <form id="goalForm">
+            <label for="goalName">Nombre de la Meta:</label>
+            <input type="text" id="goalName" name="goalName" required>
+            <label for="goalAmount">Monto:</label>
+            <input type="number" id="goalAmount" name="goalAmount" required>
+            <label for="goalDate">Fecha Límite:</label>
+            <input type="date" id="goalDate" name="goalDate" required>
+            <button type="submit">Agregar Meta</button>
+        </form>
+        <table id="goalTable">
+            <thead>
+                <tr>
+                    <th>Nombre de la Meta</th>
+                    <th>Monto</th>
+                    <th>Fecha Límite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas de metas se insertarán aquí -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plataforma de Gestión Financiera Personal</p>
+    </footer>
+    <script src="js/goals.js"></script>
+</body>
+</html>
+
